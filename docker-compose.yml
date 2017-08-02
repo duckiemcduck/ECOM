@@ -1,0 +1,16 @@
+version: '2'
+services:
+ wordpress:
+  image: wordpress:4.8.0-php7.0-apache
+  environment:
+   - WORDPRESS_DB_HOST=mariadb
+   - WORDPRESS_DB_PASSWORD=admin
+   - WORDPRESS_DB_NAME=wordpress
+  volumes:
+   - ./Wordpress_Files:/var/www/
+ mariadb:
+  image: mariadb:10.3.0
+  environment:
+   - MYSQL_ROOT_PASSWORD=admin
+  volumes:
+   - ./MariaDB_Files:/var/lib/mysql
