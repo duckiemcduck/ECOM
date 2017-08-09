@@ -50,3 +50,16 @@ O processo do servidor esperará o processo do banco de dados inicializar antes 
 7- Acesse o endereço pelo navegador e configure Wordpress como desejar.
 ![http://i.imgur.com/8lDLo9h.png](http://i.imgur.com/8lDLo9h.png)
  --
+ 
+ ##Entrando no Banco de Dados
+ 1- Para entrar no container do banco de dados, digite:
+ ```
+ sudo docker exec -i -t ecom_mariadb_1 /bin/bash
+ ```
+ 2- Entre no banco. A senha e o nome do banco de dados são fornecidos no arquivo docker-compose.yml.
+ ```
+ mysql -u root -p wordpress
+ senha admin
+ ```
+ 
+ 
