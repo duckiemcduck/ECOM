@@ -51,7 +51,7 @@ O processo do servidor esperará o processo do banco de dados inicializar antes 
 ![http://i.imgur.com/8lDLo9h.png](http://i.imgur.com/8lDLo9h.png)
  --
  
- ##Entrando no Banco de Dados
+ ## Entrando no Banco de Dados
  1- Para entrar no container do banco de dados, digite:
  ```
  sudo docker exec -i -t ecom_mariadb_1 /bin/bash
