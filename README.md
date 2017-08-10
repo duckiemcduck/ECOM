@@ -32,6 +32,20 @@ docker-compose
 ./install-docker-compose.sh
 ```
 
+4- Identifique a porta que você deseja para o serviço Wordpress.
+Por padrão, o serviço irá alocar a porta `80` em `localhost`. Isto pode ser alterado [nesta linha de docker-compose.yml](https://github.com/duckiemcduck/ECOM/commit/07fd209f586fbcc67041e2b95472fe1545ebd04c)
+```
+ports:
+80:80
+```
+>Serviço responderá em http://localhost
+```
+ports:
+8080:80
+```
+>Serviço responderá em http://localhost:8080
+
+
 5- Execute o serviço
 
 ```
@@ -43,9 +57,6 @@ sudo docker-compose up
 *Os processos do banco de dados e do servidor serão iniciados.*
 
 O processo do servidor esperará o processo do banco de dados inicializar antes de alocar um endereço.
-
->Espere o retorno da seguinte mensagem do processo do wordpress, informando o endereço do servidor:
-![http://i.imgur.com/etxmjAj.png](http://i.imgur.com/etxmjAj.png)
 
 7- Acesse o endereço pelo navegador e configure Wordpress como desejar.
 ![http://i.imgur.com/8lDLo9h.png](http://i.imgur.com/8lDLo9h.png)
