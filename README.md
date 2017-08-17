@@ -2,6 +2,9 @@
 Este repositório contêm scripts e configurações para executar um servidor apache com Wordpress utilizando serviços _Docker_
 >Para mais informações sobre docker, consulte: https://aws.amazon.com/pt/docker/
 
+>Para documentação da imagem de Wordpress, consulte: https://hub.docker.com/_/wordpress/
+
+>Para documentação da imagem de MariaDB, consulte: https://hub.docker.com/_/mariadb/
 ## Instalação Linux (Ubuntu 16.04.3 Xenial)
 ### Comandos no terminal
 #### 1- Baixe ou clone este repositório para sua máquina local.
